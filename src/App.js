@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class App extends React.Component {
   state = {
@@ -10,9 +10,15 @@ class App extends React.Component {
   focus = () => {
     this.refs.searcher.focus();
   }
+  test = () => {
+    console.log('ran')
+  }
   render() {
     return (
+      <div>
+      <button onClick={this.test}> click</button>
         <input onBlur={this.focus} ref="searcher" placeholder="Search" type="text" />
+        </div>
     );
   }
 }

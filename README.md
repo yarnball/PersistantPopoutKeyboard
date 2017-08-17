@@ -1,1 +1,1 @@
-## Keep the keyboard up whilst `onClick` events
+## Keep the keyboard up during `onClick` events
