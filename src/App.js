@@ -1,17 +1,16 @@
 import React from 'react';
 
 class App extends React.Component {
-  state = {
-    test: false,
-  };
   componentWillMount() {
-    this.setState({ x: !this.state.x }, () => { this.focus(); });
+    setTimeout(() => {
+  this.focus()
+}, 0);
   }
   focus = () => {
     this.refs.searcher.focus();
   }
   test = () => {
-    console.log('ran')
+    this.refs.searcher.focus();
   }
   render() {
     return (
